@@ -64,7 +64,7 @@ SearchAPI-MCP-Agent implements the A2A protocol and Model Context Protocol, enca
 
 ```bash
 # 克隆仓库 | Clone repository
-git clone https://github.com/yourusername/searchapi-mcp-agent.git
+git clone https://github.com/RmMargt/searchapi-mcp-agent.git
 cd searchapi-mcp-agent
 
 # 创建并激活虚拟环境 | Create and activate virtual environment
