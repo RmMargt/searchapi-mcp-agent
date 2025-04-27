@@ -22,21 +22,24 @@ logger = logging.getLogger(__name__)
 # 加载环境变量
 load_dotenv()
 
-# 从a2a_common导入A2A服务器和相关类型
+# 删除旧的导入路径设置
+# sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../samples/python")))
+
+# 从Common导入A2A服务器和相关类型
 try:
-    from a2a_common.server import A2AServer
-    from a2a_common.types import (
+    from common.server import A2AServer
+    from common.types import (
         AgentCapabilities,
         AgentCard,
         AgentSkill,
         MissingAPIKeyError
     )
-    logger.info("Successfully imported types from a2a_common")
+    logger.info("Successfully imported types from common")
 except ImportError as e:
-    logger.error(f"Failed to import necessary types from a2a_common: {e}")
+    logger.error(f"Failed to import necessary types from common: {e}")
     raise e
 
-# 从本地导入agent和task_manager
+# 从当前项目导入agent和task_manager
 try:
     from agent import SearchAPIAgent
     from task_manager import AgentTaskManager

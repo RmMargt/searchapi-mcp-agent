@@ -4,6 +4,18 @@
 
 An Agent-to-Agent (A2A) protocol based SearchAPI agent that integrates various search API tools through the Model Context Protocol (MCP) system.
 
+## 更新说明 | Update Notes
+
+**2024 更新**: 
+- 修复了导入路径问题：从 samples.python.agents 导入修改为直接从当前目录导入
+- 修复了 a2a_common 导入问题：修改为从 common 模块导入
+- 移除了 a2a_common 依赖安装需求
+
+**2024 Updates**:
+- Fixed import path issues: Changed from samples.python.agents imports to direct imports from the current directory
+- Fixed a2a_common import issues: Changed to import from the common module
+- Removed a2a_common dependency installation requirements
+
 ## 概述 | Overview
 
 SearchAPI-MCP-Agent 实现了 A2A 协议和 Model Context Protocol，将各种搜索操作封装为工具和资源。它作为 AI 助手和搜索服务之间的桥梁，支持地图搜索、航班查询、酒店预订等多种功能。

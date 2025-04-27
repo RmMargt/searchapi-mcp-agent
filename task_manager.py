@@ -12,8 +12,8 @@ logger = logging.getLogger(__name__)
 
 # 从 Common 导入基础类和类型
 try:
-    from a2a_common.server.task_manager import InMemoryTaskManager
-    from a2a_common.types import (
+    from common.server.task_manager import InMemoryTaskManager
+    from common.types import (
         Artifact,
         Task, TaskStatus, TaskState, Message, 
         TextPart, DataPart, FilePart,
@@ -22,9 +22,9 @@ try:
         TaskStatusUpdateEvent, TaskArtifactUpdateEvent,
         InternalError, JSONRPCResponse
     )
-    logger.info("Successfully imported types and InMemoryTaskManager from a2a_common.")
+    logger.info("Successfully imported types and InMemoryTaskManager from common.")
 except ImportError as e:
-    logger.error(f"Failed to import necessary types from a2a_common: {e}")
+    logger.error(f"Failed to import necessary types from common: {e}")
     raise e
 
 # 定义默认的SearchAPI工具描述，实际运行时会从MCP服务器获取完整定义
