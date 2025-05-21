@@ -120,7 +120,7 @@ GOOGLE_API_KEY=your_google_api_key_here
 #### 1. 启动 SearchAPI Agent
 ```bash
 # 在searchapi-mcp-agent目录下
-python -m searchapi-mcp-agent --host localhost --port 10001
+python -m searchapi_mcp_agent --host localhost --port 10001
 ```
 
 #### 2. 启动 Host Agent (基于 Google A2A 项目)

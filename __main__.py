@@ -129,7 +129,7 @@ def main(host, port):
     # 创建Agent卡片
     agent_card = AgentCard(
         name="SearchAPI MCP Agent",
-        description="通过MCP (Model Control Protocol) 提供Google搜索、地图、航班、酒店、视频等搜索功能的代理",
+        description="通过MCP (Model Context Protocol) 提供Google搜索、地图、航班、酒店、视频等搜索功能的代理",
         url=f"http://{host}:{port}/",
         version="1.0.0",
         defaultInputModes=["text/plain"],
